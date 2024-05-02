@@ -1,9 +1,11 @@
 import React from 'react'
+import Summary from '../components/Summary'
 
 const HomePage = () => {
   return (
-    <div>
+    <div className='flex'>
       HOME
+      <Summary/>
     </div>
   )
 }
