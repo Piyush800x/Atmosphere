@@ -12,7 +12,7 @@ const Carousel = ({ children }) => {
   };
 
   return (
-    <div className="relative w-5/6 flex no-scrollbar">
+    <div className="relative no-scrollbar">
       <div
         ref={containerRef}
         className="overflow-x-auto scroll-smooth flex scrollbar-hide"
