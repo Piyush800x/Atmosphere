@@ -16,9 +16,9 @@ const Summary = () => {
 
     // getData()
     // fetchHourlyForecast()
-
+    // bg-white bg-opacity-10 backdrop-blur-lg
   return (
-    <div className='absolute bottom-10 left-10 bg-white bg-opacity-10 backdrop-blur-lg w-96 h-64 rounded-3xl'>
+    <div className='absolute bottom-10 left-10 w-96 h-64 rounded-3xl'>
       {/* 12 C and cloud */}
       <div className='flex flex-row font-inter text-white'>
         {/* 12 c */}

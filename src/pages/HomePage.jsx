@@ -1,8 +1,10 @@
 import React from 'react'
 import Summary from '../components/Summary'
-import DailyForecast from '../components/DailyForecast'
-import Dummy from '../components/Dummy'
-import WeeklyForecast from '../components/WeeklyForecast'
+import DailyForecastCard from '../components/DailyForecastCard'
+import WeeklyForecastCard from '../components/WeeklyForecastCard'
+import SearchBar from '../components/SearchBar'
+import Title from '../components/Title'
+
 
 const HomePage = () => {
   return (
@@ -12,9 +14,11 @@ const HomePage = () => {
     // </div>
     <div className='relative w-screen h-screen bg-sunny_bg bg-center bg-cover'>
       {/* <h1 className='font-inter text-white'>Hello New Font</h1> */}
+      <Title/>
+      <SearchBar/>
       <Summary/>
-      <DailyForecast/>
-      <WeeklyForecast/>
+      <DailyForecastCard/>
+      <WeeklyForecastCard/>
       {/* <Dummy/> */}
     </div>
   )

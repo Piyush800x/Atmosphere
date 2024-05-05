@@ -12,9 +12,6 @@ const TomorrowForecast = () => {
             <img className='ml-4' src={PartlyCloudDay} width={30} height={30}/>
             {/* Low */}
             <h1 className='ml-6 mr-2'>1°C</h1>
-            {/* <div className='relative'>
-                <TemperatureBar currentTemp={20} minTemp={10} maxTemp={35}/>
-            </div> */}
             <NewTempBar currTemp={20} minTemp={10} maxTemp={30}/>
             {/* High */}
             <h1 className='ml-2'>12°C</h1>

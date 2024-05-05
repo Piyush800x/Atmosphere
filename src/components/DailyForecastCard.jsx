@@ -6,7 +6,7 @@ const DailyForecast = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   return (
-    <div className='font-cabin absolute top-10 right-10 w-2/3 h-64 bg-white bg-opacity-10 backdrop-blur-lg rounded-2xl'>
+    <div className='font-cabin absolute top-16 right-10 w-2/3 h-64 bg-white bg-opacity-10 backdrop-blur-lg rounded-2xl mt-5'>
       <div className='flex flex-col'>
         {/* txt 1 */}
         <div className='drop-shadow-lg mt-1 ml-2 font-cabin font-light text-white'>

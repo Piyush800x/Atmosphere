@@ -729,6 +729,10 @@ video {
   right: 2.5rem;
 }
 
+.right-14 {
+  right: 3.5rem;
+}
+
 .right-2 {
   right: 0.5rem;
 }
@@ -757,8 +761,8 @@ video {
   top: 50%;
 }
 
-.top-10 {
-  top: 2.5rem;
+.top-16 {
+  top: 4rem;
 }
 
 .top-2\/4 {
@@ -769,12 +773,24 @@ video {
   top: 0.75rem;
 }
 
+.top-5 {
+  top: 1.25rem;
+}
+
 .top-\[14\%\] {
   top: 14%;
 }
 
 .top-\[4\%\] {
   top: 4%;
+}
+
+.top-10 {
+  top: 2.5rem;
+}
+
+.top-6 {
+  top: 1.5rem;
 }
 
 .z-10 {
@@ -836,6 +852,10 @@ video {
   margin-left: -0.25rem;
 }
 
+.-ml-8 {
+  margin-left: -2rem;
+}
+
 .-mt-6 {
   margin-top: -1.5rem;
 }
@@ -874,10 +894,6 @@ video {
 
 .ml-4 {
   margin-left: 1rem;
-}
-
-.ml-40 {
-  margin-left: 10rem;
 }
 
 .ml-5 {
@@ -934,6 +950,10 @@ video {
 
 .mt-px {
   margin-top: 1px;
+}
+
+.-mr-8 {
+  margin-right: -2rem;
 }
 
 .box-border {
@@ -1157,6 +1177,10 @@ video {
   width: 1rem;
 }
 
+.w-4\/5 {
+  width: 80%;
+}
+
 .w-5 {
   width: 1.25rem;
 }
@@ -1210,8 +1234,12 @@ video {
   width: 100vw;
 }
 
-.w-1\/2 {
-  width: 50%;
+.w-5\/6 {
+  width: 83.333333%;
+}
+
+.w-48 {
+  width: 12rem;
 }
 
 .min-w-\[100vw\] {
@@ -1729,6 +1757,10 @@ video {
   border-top-width: 2px;
 }
 
+.border-none {
+  border-style: none;
+}
+
 .border-amber-500 {
   --tw-border-opacity: 1;
   border-color: rgb(255 193 7 / var(--tw-border-opacity));
@@ -1782,6 +1814,11 @@ video {
 .border-deep-purple-500 {
   --tw-border-opacity: 1;
   border-color: rgb(103 58 183 / var(--tw-border-opacity));
+}
+
+.border-gray-300 {
+  --tw-border-opacity: 1;
+  border-color: rgb(224 224 224 / var(--tw-border-opacity));
 }
 
 .border-gray-900 {
@@ -2185,6 +2222,10 @@ video {
   --tw-bg-opacity: 0.1;
 }
 
+.bg-opacity-20 {
+  --tw-bg-opacity: 0.2;
+}
+
 .bg-opacity-60 {
   --tw-bg-opacity: 0.6;
 }
@@ -2193,12 +2234,28 @@ video {
   --tw-bg-opacity: 0.8;
 }
 
+.bg-opacity-30 {
+  --tw-bg-opacity: 0.3;
+}
+
 .bg-gradient-to-tr {
   background-image: linear-gradient(to top right, var(--tw-gradient-stops));
 }
 
 .bg-sunny_bg {
   background-image: url('/bg/Sunny.webp');
+}
+
+.bg-rainy_bg {
+  background-image: url('/bg/Rainy.webp');
+}
+
+.bg-cloudy_bg {
+  background-image: url('/bg/Cloudy.webp');
+}
+
+.bg-snowy_bg {
+  background-image: url('/bg/Snow.webp');
 }
 
 .from-amber-600 {
@@ -3417,6 +3474,10 @@ video {
   transition-property: transform;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
+}
+
+.duration-100 {
+  transition-duration: 100ms;
 }
 
 .duration-200 {
