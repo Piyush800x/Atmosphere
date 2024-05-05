@@ -2,7 +2,7 @@ import React from 'react'
 import { invoke } from "@tauri-apps/api/tauri";
 import RainyIcon from '../assets/icons/rainy.svg'
 
-const Summary = () => {
+const Summary = ({currTemp, location, time, minTemp, maxTemp}) => {
     const getData = async () => {
         let data = await invoke("fetch_curr_details", {location: "kolkata"});
         console.log(data);

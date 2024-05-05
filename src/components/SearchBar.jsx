@@ -1,15 +1,18 @@
 import React, { useState } from 'react'
+import {useNavigate } from 'react-router-dom';
 import SearchIcon from '../assets/icons/search_icon.svg'
 
 const SearchBar = () => {
     const [searchTerm, setSearchTerm] = useState('');
+    const history = useNavigate ();
     
     const handleSearchChnage = (event) => {
         setSearchTerm(event.target.value);
     }
 
     const handleSearch = async () => {
-        console.log(`Search: ${searchTerm}`)
+        console.log(`Search: ${searchTerm}`);
+        history('/data', {searchTerm});
     }
 
 

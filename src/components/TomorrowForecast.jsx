@@ -3,7 +3,7 @@ import NewTempBar from './NewTempBar'
 import PartlyCloudDay from '../assets/icons/partly_cloudy_day.svg'
 import PartlyCloudNight from '../assets/icons/partly_cloudy_night.svg'
 
-const TomorrowForecast = () => {
+const TomorrowForecast = ({currTemp, minTemp, maxTemp}) => {
   return (
     <div>
       <div className='flex flex-row w-3/5 mb-2'>

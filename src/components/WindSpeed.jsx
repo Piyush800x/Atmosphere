@@ -1,7 +1,7 @@
 import React from 'react'
 import WindIcon from '../assets/icons/wind.svg'
 
-const WindSpeed = () => {
+const WindSpeed = ({direction, type, speed}) => {
   return (
     <div>
       <div className='drop-shadow-lg flex flex-row font-cabin text-white overflow-hidden justify-between'>
