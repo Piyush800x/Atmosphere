@@ -1,19 +1,16 @@
-import React from 'react'
-import { invoke } from "@tauri-apps/api/tauri";
+import React, {useState, useEffect} from 'react'
 import RainyIcon from '../assets/icons/rainy.svg'
 
 const Summary = ({currTemp, location, time, minTemp, maxTemp}) => {
-    const getData = async () => {
-        let data = await invoke("fetch_curr_details", {location: "kolkata"});
-        console.log(data);
-        
-    }
 
-    const fetchHourlyForecast = async () => {
-        let data = await invoke("fetch_hourly_forecast", {location: "kolkata"});
-        console.log(data);
-    }
+  const [currentTime, setCurrentTime] = useState(new Date());
 
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setCurrentTime(new Date());
+    }, 1000);
+    return () => clearInterval(intervalId);
+  }, []);
     // getData()
     // fetchHourlyForecast()
     // bg-white bg-opacity-10 backdrop-blur-lg
@@ -23,7 +20,7 @@ const Summary = ({currTemp, location, time, minTemp, maxTemp}) => {
       <div className='flex flex-row font-inter text-white'>
         {/* 12 c */}
         <div className='ml-2 mt-2'>
-          <h1 className='font-bold text-9xl'>12°C</h1>
+          <h1 className='font-bold text-9xl'>{currTemp}°C</h1>
         </div>
         {/* Cloud */}
         <div className='flex ml-4 mt-2'>
@@ -37,7 +34,7 @@ const Summary = ({currTemp, location, time, minTemp, maxTemp}) => {
       {/* 04:00 | H:20° L:11° */}
       <div>
         <div className='font-inter text-white justify-start'>
-          <h1 className='ml-5 mt-2 text-xl'>04:00 | H:20° L:11° </h1>
+          <h1 className='ml-5 mt-2 text-xl'>{currentTime.getHours()}:{currentTime.getMinutes()} | H:20° L:11° </h1>
         </div>
       </div>
     </div>
